@@ -14,10 +14,10 @@ const database = knex({
     // version: '15.1',
     
     connection: {  
-        host : "sql2.freemysqlhosting.net",
-        user : "sql2377541",
-        password : "rK2*bP6*",
-        database : "sql2377541",
+        host : process.env.HOST,
+        user : process.env.USER,
+        password : process.env.PASSWORD,
+        database : process.env.DATABASE,
         timezone: 'utc'
 }
   });  
