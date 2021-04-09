@@ -571,18 +571,16 @@ app.post("/dash",(req,res)=>{
                   
                   const EditTime =()=>{
                       let times
-                      if (period === "30") {
-                        times="30Days"
+                      if (period === "5") {
+                        times="5Days"
                       }
-                      if (period === "90") {
-                         times="3Months" 
+                      if (period === "8") {
+                         times="8Days" 
                     }
-                    if (period === "180") {
-                          times="6Months"
+                    if (period === "14") {
+                          times="14Days"
                     }
-                    if (period==="365") {
-                        times="1Year"
-                    }
+                    
                     return times
                   }
     
